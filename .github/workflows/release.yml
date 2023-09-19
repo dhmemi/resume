@@ -28,7 +28,7 @@ jobs:
       - name: CJK-Fonts-Action
         # You may pin to the exact commit or the version.
         # uses: RisingInIris2017/cjk-fonts-action@651b49c1d36bef3a6039fd4cbe620e39bd36148a
-        uses: RisingInIris2017/cjk-fonts-action@v1.0.7
+        uses: dhmemi/cjk-fonts-action@e080b704f73188a98cb32b55782951ee30081cac
       
       - name: Setup Typst
         # You may pin to the exact commit or the version.
