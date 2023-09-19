@@ -7,8 +7,8 @@ on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "dhmemi-patch-1" ]
-  pull_request:
-    branches: [ "main" ]
+  # pull_request:
+    # branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -34,7 +34,9 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: yusancky/setup-typst@bf23b5bbaead4a583e631c2823ce2b3569fa7d17
         uses: yusancky/setup-typst@v2.0.1
-
+        with:
+          version: 0.8.0
+          
       - name: Compile typst file
         run: typst compile --font-path ./fonts resume.typ resume.pdf
         
