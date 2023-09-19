@@ -35,7 +35,7 @@ jobs:
         # uses: yusancky/setup-typst@bf23b5bbaead4a583e631c2823ce2b3569fa7d17
         uses: yusancky/setup-typst@v2.0.1
         with:
-          version: 0.8.0
+          version: v0.8.0
           
       - name: Compile typst file
         run: typst compile --font-path ./fonts resume.typ resume.pdf
