@@ -40,7 +40,7 @@
   content
 ) = {
   block(
-    inset: (left: 0pt),
+    inset: (left: 0pt, top: 10pt),
     tl + h(1fr) + tr +
     linebreak() +
     if bl != [] or br != [] {
@@ -68,7 +68,7 @@
   show heading.where(
     level: 2
   ): it => text(
-    size: 12pt,
+    size: 14pt,
     font: the-font,
     weight: "bold",
     block(
@@ -83,7 +83,7 @@
 
   show link: it => underline(offset: 2pt, it)
   set page(
-   margin: (x: 0.5cm, y: 0.9cm),
+   margin: (x: 1.5cm, y: 1.5cm),
    numbering: "1 / 1"
   )
   set par(justify: true)
